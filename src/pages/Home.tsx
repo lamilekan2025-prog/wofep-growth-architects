@@ -4,63 +4,29 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import heroImage from "@/assets/hero-home.jpg";
+import HeroSlider from "@/components/HeroSlider";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `linear-gradient(135deg, hsl(280 45% 30% / 0.6) 0%, hsl(280 35% 20% / 0.6) 100%), url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <div className="container mx-auto px-4 z-10 relative">
-          <div className="max-w-4xl mx-auto text-center text-primary-foreground">
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-              Building Structure.<br />Powering Growth.
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 animate-fade-in">
-              The WoFEP Company is a boutique consulting firm helping start-ups and early-stage businesses
-              in the fashion, retail, and logistics industries build structure, scale operations, and grow sustainably.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link to="/contact">
-                  Let's Talk Growth <ArrowRight className="ml-2" size={20} />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
-                <Link to="/services">
-                  Explore Our Services
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Who We Are Section */}
       <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-primary">
-              We help fashion, retail, and logistics businesses move from idea to impact.
+              Industry Expertise That Delivers Real Growth.
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              At WoFEP, we understand the realities of building a business from the ground up — limited resources,
-              lean teams, and ambitious goals.
+               Every sector we serve is unique — but the challenge is the same: turning ideas into structured, scalable operations.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Our approach blends management consulting precision with creative and supply chain industry insight
-              to help entrepreneurs structure their operations, strengthen their teams, and position their brands
-              for long-term success.
+              At WoFEP, we blend consulting expertise with real-world understanding of the fashion, retail, 
+              and logistics ecosystems to deliver clarity, strategy, and measurable improvement.
+                        
             </p>
             <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               <Link to="/about">
