@@ -16,7 +16,7 @@ const Home = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `linear-gradient(135deg, hsl(280 45% 30% / 0.95) 0%, hsl(280 35% 20% / 0.95) 100%), url(${heroImage})`,
+            backgroundImage: `linear-gradient(135deg, hsl(280 45% 30% / 0.6) 0%, hsl(280 35% 20% / 0.6) 100%), url(${heroImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
