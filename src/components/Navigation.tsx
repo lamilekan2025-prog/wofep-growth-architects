@@ -33,9 +33,6 @@ const Navigation = () => {
             <Link to="/industries" className="text-foreground hover:text-primary transition-colors">
               Industries
             </Link>
-            <Link to="/insights" className="text-foreground hover:text-primary transition-colors">
-              Insights
-            </Link>
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
@@ -82,13 +79,6 @@ const Navigation = () => {
                 className="text-foreground hover:text-primary transition-colors py-2"
               >
                 Industries
-              </Link>
-              <Link
-                to="/insights"
-                onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-primary transition-colors py-2"
-              >
-                Insights
               </Link>
               <Link
                 to="/contact"
