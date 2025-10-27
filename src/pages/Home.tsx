@@ -167,25 +167,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Insights Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-primary">
-              Insights for the Growing Business
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              We share lessons, frameworks, and resources for entrepreneurs navigating growth in Nigeria's creative and retail economy.
-            </p>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link to="/insights">
-                Explore Our Insights <ArrowRight className="ml-2" size={18} />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonial Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
