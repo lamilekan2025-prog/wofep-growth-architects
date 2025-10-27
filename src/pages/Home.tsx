@@ -16,23 +16,25 @@ const Home = () => {
       {/* Who We Are Section */}
       <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-primary">
-              Industry Expertise That Delivers Real Growth.
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-primary text-center">
+              We help fashion, retail, and logistics businesses move from idea to impact.
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-               Every sector we serve is unique — but the challenge is the same: turning ideas into structured, scalable operations.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              At WoFEP, we blend consulting expertise with real-world understanding of the fashion, retail, 
-              and logistics ecosystems to deliver clarity, strategy, and measurable improvement.
-                        
-            </p>
-            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Link to="/about">
-                Learn About Our Story <ArrowRight className="ml-2" size={18} />
-              </Link>
-            </Button>
+            <div className="space-y-4 text-lg text-muted-foreground mb-8">
+              <p>
+                At WoFEP, we understand the realities of building a business from the ground up — limited resources, lean teams, and ambitious goals.
+              </p>
+              <p>
+                Our approach blends management consulting precision with creative and supply chain industry insight to help entrepreneurs structure their operations, strengthen their teams, and position their brands for long-term success.
+              </p>
+            </div>
+            <div className="text-center">
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <Link to="/about">
+                  Learn About Our Story <ArrowRight className="ml-2" size={18} />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -122,7 +124,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
             <div className="bg-card p-8 rounded-lg border border-border hover:shadow-lg transition-all duration-300">
               <h3 className="font-serif text-2xl font-semibold mb-4 text-primary">Fashion</h3>
               <ul className="space-y-2 text-muted-foreground">
@@ -149,6 +151,33 @@ const Home = () => {
                 <li>Fulfillment partners</li>
               </ul>
             </div>
+          </div>
+
+          <div className="text-center">
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Link to="/industries">
+                Explore Industries <ArrowRight className="ml-2" size={18} />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Insights Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-primary">
+              Insights for the Growing Business
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              We share lessons, frameworks, and resources for entrepreneurs navigating growth in Nigeria's creative and retail economy.
+            </p>
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Link to="/insights">
+                Explore Our Insights <ArrowRight className="ml-2" size={18} />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

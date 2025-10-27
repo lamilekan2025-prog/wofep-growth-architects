@@ -52,21 +52,20 @@ const HeroSlider = () => {
       <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-4xl mx-auto text-center text-primary-foreground">
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Where Creativity<br />Meets Structure
+            Building Structure.<br />Powering Growth.
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 animate-fade-in">
-            We specialize in the industries driving Africa's creative and consumer economy — fashion, retail, and logistics.
-            Our consulting work helps founders and operators strengthen their systems, teams, and strategies for scalable growth.
+            The WoFEP Company is a boutique consulting firm helping start-ups and early-stage businesses in the fashion, retail, and logistics industries build structure, scale operations, and grow sustainably.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
               <Link to="/contact">
-                Let's Walk Together <ArrowRight className="ml-2" size={20} />
+                Let's Talk Growth <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
               <Link to="/services">
-                Explore Our Services
+                Explore Our Services <ArrowRight className="ml-2" size={20} />
               </Link>
             </Button>
           </div>
