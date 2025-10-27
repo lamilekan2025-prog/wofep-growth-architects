@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, Building2, Megaphone, Users, TrendingUp, CheckCircle2, Circle, ChevronRight } from "lucide-react";
+import servicesImage from "@/assets/services.jpeg";
 
 const Services = () => {
   return (
@@ -11,20 +12,33 @@ const Services = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-background to-secondary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 text-primary">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        {/* Background image with overlay */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `linear-gradient(135deg, hsl(280 45% 30% / 0.6) 0%, hsl(280 35% 20% / 0.6) 100%), url(${servicesImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+
+        {/* Fixed content overlay */}
+        <div className="container mx-auto px-4 z-10 relative">
+          <div className="max-w-4xl mx-auto text-center text-primary-foreground">
+            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
               Structure. Strategy. Systems that scale.
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 animate-fade-in">
               We help founders and early-stage teams streamline their operations, strengthen their brand, and set up the foundation for sustainable growth. Our consulting services are designed for start-ups ready to move from informal to organized — and from ambition to achievement.
             </p>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/contact">
-                Let's Work Together <ArrowRight className="ml-2" size={18} />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                <Link to="/contact">
+                  Let's Work Together <ArrowRight className="ml-2" size={20} />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
