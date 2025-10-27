@@ -1,10 +1,14 @@
-import { ArrowRight, Building2, Megaphone, Users, TrendingUp } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HeroSlider from "@/components/HeroSlider";
+import businessOperationImage from "@/assets/businessopetation.jpeg";
+import brandMarketingImage from "@/assets/brandandmarketing.jpeg";
+import humanCapitalImage from "@/assets/humancapital.jpeg";
+import processPerformanceImage from "@/assets/processandperformance.jpeg";
 
 const Home = () => {
   return (
@@ -48,8 +52,8 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <Card className="border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Building2 className="text-primary" size={24} />
+                <div className="w-20 h-20 rounded-lg bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                  <img src={businessOperationImage} alt="Business Operations & Strategy" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="font-serif text-2xl">Business Operations & Strategy</CardTitle>
               </CardHeader>
@@ -62,8 +66,8 @@ const Home = () => {
 
             <Card className="border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Megaphone className="text-primary" size={24} />
+                <div className="w-20 h-20 rounded-lg bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                  <img src={brandMarketingImage} alt="Brand & Marketing Advisory" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="font-serif text-2xl">Brand & Marketing Advisory</CardTitle>
               </CardHeader>
@@ -76,8 +80,8 @@ const Home = () => {
 
             <Card className="border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <Users className="text-primary" size={24} />
+                <div className="w-20 h-20 rounded-lg bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                  <img src={humanCapitalImage} alt="Human Capital & Team Development" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="font-serif text-2xl">Human Capital & Team Development</CardTitle>
               </CardHeader>
@@ -90,8 +94,8 @@ const Home = () => {
 
             <Card className="border-border hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <TrendingUp className="text-primary" size={24} />
+                <div className="w-20 h-20 rounded-lg bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+                  <img src={processPerformanceImage} alt="Process & Performance Optimization" className="w-full h-full object-cover" />
                 </div>
                 <CardTitle className="font-serif text-2xl">Process & Performance Optimization</CardTitle>
               </CardHeader>
