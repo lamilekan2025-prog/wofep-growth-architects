@@ -30,7 +30,7 @@ const Contact = () => {
                 <Linkedin className="text-primary mb-4" size={32} />
                 <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">Connect on LinkedIn</h3>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/company/the-wofep-company/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
