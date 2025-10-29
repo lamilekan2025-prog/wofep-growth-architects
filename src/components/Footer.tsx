@@ -47,10 +47,10 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <div className="flex flex-col gap-2 text-sm">
               <a
-                href="mailto:"
+                href="mailto:msochuke@gmail.com"
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                hello@wofepcompany.com
+                msochuke@gmail.com
               </a>
               <a
                 href="https://linkedin.com"
