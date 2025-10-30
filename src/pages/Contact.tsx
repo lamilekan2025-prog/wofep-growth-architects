@@ -17,7 +17,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-card p-8 rounded-lg border border-border">
                 <Mail className="text-primary mb-4" size={32} />
-                <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">Email Us</h3>
+                <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">Call Us</h3>
                 <a 
                   href="call" 
                   className="text-muted-foreground hover:text-primary transition-colors"
