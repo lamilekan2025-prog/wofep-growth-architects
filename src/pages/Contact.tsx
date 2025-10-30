@@ -19,10 +19,10 @@ const Contact = () => {
                 <Mail className="text-primary mb-4" size={32} />
                 <h3 className="font-serif text-2xl font-semibold mb-2 text-primary">Email Us</h3>
                 <a 
-                  href="mailto:hello@wofepcompany.com" 
+                  href="call" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  msochuke@gmail.com
+                  08184162639
                 </a>
               </div>
 
